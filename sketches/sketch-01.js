@@ -10,7 +10,7 @@ const sketch = () => {
     context.fillRect(0, 0, width, height);
     context.lineWidth = width * 0.01;
 
-          // context.shadowBlur = 100;
+           // context.shadowBlur = 100;
           // context.shadowOffsetX = 30;
           // context.shadowOffsetY = 5;
           // context.shadowColor = 'rgba(190, 129, 129, 0.5)';
@@ -19,8 +19,7 @@ const sketch = () => {
         const gradient = context.createLinearGradient(0,0,170,0);
         gradient.addColorStop(0.1, 'orange');       
         gradient.addColorStop(1, 'blue');
-        gradient.addColorStop(0.1, 'yellow');      
-        
+        gradient.addColorStop(0.1, 'yellow');
 
         context.strokeStyle = gradient;
         context.lineWidth = 8;
@@ -47,7 +46,7 @@ const sketch = () => {
                 if (Math.random() > 0.5){
                     context.beginPath();
                     context.rect(x + off / 2, y + off / 2, w - off , h - off );
-                    context.stroke()
+                    context.stroke();
                 }
             }
             
