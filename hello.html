@@ -1,86 +1,39 @@
 <html>
+<canvas width="600", height="600"></canvas>
 <body>
-    <canvas width="1000" height="1000"></canvas>
-
     <script>
         let canvas = document.querySelector('canvas');
-        let ctx = canvas.getContext('2d');
+        let context = canvas.getContext('2d');
+        
+        context.fillStyle = 'blue';
+        context.rect(100,100,400,400);
+        context.stroke();
 
-        ctx.shadowBlur = 20;
-        ctx.shadowOffsetX = 10;
-        ctx.shadowOffsetY = 5;
-        ctx.shadowColor = 'rgba(0,0,0,0.5)';
 
-        //create gradient color
-        const gradient = ctx.createLinearGradient(0,0,170,0);
-        gradient.addColorStop(0.1, 'orange');       
-        gradient.addColorStop(1, 'blue');
-        gradient.addColorStop(0.1, 'yellow');      
+        context.lineWidth = 6;
+        context.beginPath(); 
+        context.rect(100,100,400,400);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(300,270,70,0, Math.PI * 2);
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(200,200);
+        context.lineTo(400,200);
+        context.lineTo(300,400);
+        context.closePath();
+        context.stroke();
+
         
 
-        ctx.strokeStyle = gradient;
-        ctx.lineWidth = 6;
-
-        const width = 60;
-        const height = 60;
-        const gap = 10;
-        let x,y;
-        for (let i = 0; i < 5; i ++ ){
-            for (let j = 0; j < 5; j ++){
-                x = 100 + (width + gap) * i;
-                y = 100 +(height + gap) * j;
-
-                ctx.beginPath();
-                ctx.rect(x,y,width,height);
-                ctx.stroke();
-
-
-                if (Math.random() > 0.5){
-                    ctx.beginPath();
-                    ctx.rect(x + 8, y + 8, width - 16, height - 16 );
-                    ctx.stroke()
-                }
-            }
-            
-        }
-
-
-        //logic
-        let years = [];
-        let siswa = ['harjo', 'dasro', 'garbo', 'tandi'];
-
-        for (let i= 0; i < siswa.length; i ++) {
-            console.log(siswa[i]);
-        }
         
-        for (let i = 0; i < 10; i++) {
-            years.push (2040 + i);
-        }
-        console.log(years);
-
-        const gravity = 9.81;
-        let velocity = 0.0;
-
-        siswa.forEach(nama => {
-            console.log(nama);
-        });
 
 
-        let band = ['st12', 'oasis', 'the-beatles', 'bmth']
 
-        function listArtist() {
-            for (let i = 0; i < band.length; i ++) {
-                console.log(band[i])
-            }
-        }
-
-        band.forEach(band => {
-            console.log(band);
-        })
 
     </script>
-
-
 
 </body>
 
