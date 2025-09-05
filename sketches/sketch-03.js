@@ -24,9 +24,14 @@ const sketch = ({ context, width, height }) => {
   }
    
   return ({ context, width, height }) => {
-    context.fillStyle = 'white';
+    const grd = context.createLinearGradient(0,0,width,height);
+    grd.addColorStop(0, '#694bc4ff');   
+    grd.addColorStop(0.5, '#b38686ff'); 
+    grd.addColorStop(0, '#ffc0cb');
+    context.fillStyle = grd;
     context.fillRect(0, 0, width, height);
-
+    context.fill();
+    
    for (let i = 0; i < agents.length; i++) {
     const agent = agents[i];
 
