@@ -54,7 +54,7 @@ const sketch = () => {
         shape.isCircle = Math.random() > 0.5;
         shape.lastUpdate = timeInSecond;
       }
-
+      
       context.beginPath();
       if (shape.isCircle) {
         context.arc(shape.x + w / 2, shape.y + h / 2, 30, 0, Math.PI * 2);
