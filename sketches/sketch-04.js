@@ -2,6 +2,7 @@ const canvasSketch = require('canvas-sketch');
 const random = require('canvas-sketch-util/random'); 
 const math = require('canvas-sketch-util/math');
 const Tweakpane = require('tweakpane');
+const Color = require('canvas-sketch-util/color');
 
 const settings = {
   dimensions: [1080, 1080],
@@ -18,11 +19,15 @@ const params = {
   frame: 0,
   animate: true,
   lineCap: 'butt',
+  background: '#ffffff',
+  foreground: '#db2a2a80' // merah transparan
 };
 
 const sketch = () => {
   return ({ context, width, height, frame }) => {
-    context.fillStyle = 'white';
+    // blend background + foreground
+    const result = Color.blend(params.background, params.foreground).hex;
+    context.fillStyle = result;
     context.fillRect(0, 0, width, height);
 
     const cols = params.cols;
@@ -43,16 +48,13 @@ const sketch = () => {
       const x = col * cellw;
       const y = row * cellh;
       const w = cellw * 0.8;
-      const h = cellh * 0.8;
 
       const f = params.animate ? frame : params.frame;
 
-      // const n = random.noise2D(x + frame * 10, y, params.freq);
       const n = random.noise3D(x, y, f * 10, params.freq);
-      
       const angle = n * Math.PI * params.amp;
-
       const scale = math.mapRange(n, -1, 1, params.scaleMin, params.scaleMax);
+
       context.save();
       context.translate(x, y);
       context.translate(margx, margy);
@@ -61,6 +63,7 @@ const sketch = () => {
 
       context.lineWidth = scale;
       context.lineCap = params.lineCap;
+      context.strokeStyle = params.foreground;
 
       context.beginPath();
       context.moveTo(w * -0.5, 0);
@@ -88,6 +91,10 @@ const createPane = () => {
   folder.addInput(params, 'amp', {min: 0, max: 1});
   folder.addInput(params, 'animate');
   folder.addInput(params, 'frame', {min: 0, max: 999});
+
+  folder = pane.addFolder({ title: 'Colors' });
+  folder.addInput(params, 'background');
+  folder.addInput(params, 'foreground');
 };
 
 createPane();
