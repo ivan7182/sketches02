@@ -20,12 +20,11 @@ const params = {
   animate: true,
   lineCap: 'butt',
   background: '#ffffff',
-  foreground: '#db2a2a80' // merah transparan
+  foreground: '#db2a2a80' 
 };
 
 const sketch = () => {
   return ({ context, width, height, frame }) => {
-    // blend background + foreground
     const result = Color.blend(params.background, params.foreground).hex;
     context.fillStyle = result;
     context.fillRect(0, 0, width, height);
