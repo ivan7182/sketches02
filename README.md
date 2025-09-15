@@ -16,5 +16,5 @@ animate
 ## Sketch 05
 ### Preview hasil sketch:
 
-![Sketch 05 - 1](sketches/output/05/2025.09.12-11.52.56.png)
-![Sketch 05 - 3](sketches/output/05/2025.09.12-11.52.50.png)
+[<img src="sketches/output/05/2025.09.12-11.52.56.png" alt="Sketch 05 - 2" width="100">](sketches/output/05/2025.09.12-11.52.56.png)
+[<img src="sketches/output/05/2025.09.12-11.52.50.png" alt="Sketch 05 - 2" width="100">](sketches/output/05/2025.09.12-11.52.50.png)
