@@ -3,8 +3,8 @@
 Preview hasil sketch:
 
 [🎥 Sketch 01 - 1](sketches/output/01/2025.09.10-00.41.35.mp4)
-![Sketch 05 - 2](sketches/output/01/2025.09.09-21.06.59.png)
-[<img src="sketches/output/01/thumbnail.png" width="300">](sketches/output/01/2025.09.09-21.06.58.png)
+[<img src="sketches/output/01/2025.09.09-21.06.59.png" alt="Sketch 05 - 2" width="300">](sketches/output/01/2025.09.09-21.06.59.png)
+
 
 
 
