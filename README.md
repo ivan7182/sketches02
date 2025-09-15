@@ -1,9 +1,11 @@
 ## Sketch 01
 
 Preview hasil sketch:
+[<img src="sketches/output/01/2025.09.09-21.06.59.png" alt="Sketch 05 - 2" width="100">](sketches/output/01/2025.09.09-21.06.59.png)
+[<img src="sketches/output/01/2025.09.09-21.07.50.png" alt="Sketch 05 - 2" width="300">](sketches/output/01/2025.09.09-21.07.50.png)
 
+animate
 [🎥 Sketch 01 - 1](sketches/output/01/2025.09.10-00.41.35.mp4)
-[<img src="sketches/output/01/2025.09.09-21.06.59.png" alt="Sketch 05 - 2" width="300">](sketches/output/01/2025.09.09-21.06.59.png)
 
 
 
