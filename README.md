@@ -7,7 +7,11 @@ Preview hasil sketch:
 animate
 [🎥 Sketch 01 - 1](sketches/output/01/2025.09.10-00.41.35.mp4)
 
+## Sketch 02
 
+Preview hasil sketch:
+[<img src="sketches/output/02/2025.09.03-17.26.02.png.png" alt="Sketch 05 - 2" width="100">](sketches/output/02/2025.09.03-17.26.02.png.png)
+[<img src="sketches/output/02/2025.09.04-13.29.25.png" alt="Sketch 05 - 2" width="100">](sketches/output/02/2025.09.04-13.29.25.png)
 
 
 ## Sketch 05
