@@ -11,9 +11,7 @@ animate
 
 Preview hasil sketch:
 [<img src="sketches/output/02/2025.09.03-16.44.04.png" alt="Sketch 05 - 2" width="100">](sketches/output/02/2025.09.03-16.44.04.png)
-
 [<img src="sketches/output/02/2025.09.03-17.27.41.png" alt="Sketch 05 - 2" width="100">](sketches/output/02/2025.09.03-17.27.41.png)
-
 [<img src="sketches/output/02/2025.09.04-13.29.25.png" alt="Sketch 05 - 2" width="100">](sketches/output/02/2025.09.04-13.29.25.png)
 
 
