@@ -42,5 +42,7 @@ animate
 
 ## Sketch 08
 ### Preview hasil sketch:
+[<img src="sketches/output/08/2025.09.16-23.41.21.png" alt="Sketch 05 - 2" width="100">](sketches/output/08/2025.09.16-23.41.21.png)
+
 animate
 [🎥 Sketch 08 - 1](sketches/output/08/2025.09.16-18.33.08.mp4)
