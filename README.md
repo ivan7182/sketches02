@@ -28,6 +28,7 @@ animate
 ### Preview hasil sketch:
 [<img src="sketches/output/05/2025.09.12-11.52.56.png" alt="Sketch 05 - 2" width="100">](sketches/output/05/2025.09.12-11.52.56.png)
 [<img src="sketches/output/05/2025.09.12-11.52.50.png" alt="Sketch 05 - 2" width="100">](sketches/output/05/2025.09.12-11.52.50.png)
+[<img src="sketches/output/05/2025.09.12-11.52.50.png" alt="Sketch 05 - 2" width="100">](sketches/output/05/2025.09.16-18.40.54.png)
 
 ## Sketch 06
 ### Preview hasil sketch:
