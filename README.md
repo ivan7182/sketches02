@@ -33,3 +33,13 @@ animate
 ### Preview hasil sketch:
 animate
 [🎥 Sketch 06 - 1](sketches/output/06/2025.09.13-18.24.11.mp4)
+
+## Sketch 07
+### Preview hasil sketch:
+animate
+[🎥 Sketch 06 - 1](sketches/output/07/2025.09.15-17.16.49.mp4)
+
+## Sketch 08
+### Preview hasil sketch:
+animate
+[🎥 Sketch 08 - 1](sketches/output/08/2025.09.16-18.33.08.mp4)
