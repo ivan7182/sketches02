@@ -46,4 +46,4 @@ animate
 
 animate
 [🎥 Sketch 08 - 1](sketches/output/08/2025.09.16-18.33.08.mp4)
-[🎥 Sketch 08 - 1](sketches/output/08/2025.09.17-12.30.29.mp4)
+[🎥 Sketch 08 - 2](sketches/output/08/2025.09.17-12.30.29.mp4)
