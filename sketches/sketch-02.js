@@ -6,7 +6,6 @@ const settings = {
   dimensions: [1080, 1080]
 };
 
-// Fungsi untuk menggambar pola lingkaran
 function drawCirclePattern(context, cx, cy, radius, num, w, h, color = 'black', withRect = false) {
   let x, y;
 
@@ -17,7 +16,6 @@ function drawCirclePattern(context, cx, cy, radius, num, w, h, color = 'black', 
     x = cx + radius * Math.sin(angle);
     y = cy + radius * Math.cos(angle);
 
-    // --- Rect (hanya muncul kalau withRect = true) ---
     if (withRect) {
       context.save();
       context.translate(x, y);
@@ -30,7 +28,6 @@ function drawCirclePattern(context, cx, cy, radius, num, w, h, color = 'black', 
       context.restore();
     }
 
-    // --- Arc (selalu ada) ---
     context.save();
     context.translate(cx, cy);
     context.rotate(-angle);
@@ -45,7 +42,6 @@ function drawCirclePattern(context, cx, cy, radius, num, w, h, color = 'black', 
 
 const sketch = () => {
   return ({ context, width, height }) => {
-    // Background gradient
     const grd = context.createLinearGradient(0, 0, width, height);
     grd.addColorStop(0, '#fcfcfcff');
     grd.addColorStop(0.5, '#a3408eff');
@@ -54,11 +50,9 @@ const sketch = () => {
     context.fillStyle = grd;
     context.fillRect(0, 0, width, height);
 
-    // Ukuran dasar rect
     const w = width * 0.01;
     const h = height * 0.3;
 
-    // Hanya lingkaran pertama yang ada rect
     drawCirclePattern(context, width * 0.5, height * 0.5, width * 0.3, 20, w, h, 'black', true);  
     drawCirclePattern(context, width * 0.5, height * 0.5, width * 0.5, 30, w, h, 'white');       
     // drawCirclePattern(context, width * 0.2, height * 0.8, width * 0.4, 40, w, h, grd);     

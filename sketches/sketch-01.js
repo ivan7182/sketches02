@@ -4,7 +4,7 @@ const Color = require('canvas-sketch-util/color');
 const settings = {
   dimensions: [1080, 1080],
   animate: true,
-  duration: 6, // total durasi loop (detik)
+  duration: 6, 
   fps: 30
 };
 
