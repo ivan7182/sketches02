@@ -1,0 +1,57 @@
+<html>
+<script>
+    let nama = "ivan";
+    let umur = 25;
+    let asal = "tegal";
+
+    console.log(nama, umur, asal);
+
+/* Buat array berisi 5 nama buah.
+Cetak buah pertama dan terakhir.
+Gunakan loop untuk menampilkan semua buah.*/
+let buah = ["jambu", "pisang", "mangga", "apel", "semangka"];
+
+for (let i=0; i < buah.length; i++) {
+    console.log(buah[i]);
+}
+
+/*
+Buat object buku dengan property: judul, penulis, dan tahun.
+Cetak judulnya.
+Ganti tahun terbit jadi 2025 dan tampilkan objectnya lagi.
+4. Loop
+
+Gunakan for loop untuk menampilkan angka 1 sampai 10, 
+tapi hanya angka genap saja.
+
+5. Function
+
+Buat function bernama perkalian yang menerima 2 angka, 
+lalu mengembalikan hasil perkaliannya.
+Panggil function itu untuk menghitung 7 x 8.
+*/
+
+let buku = {
+    judul: "creative code",
+    penulis: "bruno imbrizzi",
+    tahun: 2010
+}
+console.log(buku);
+console.log(buku.judul);
+buku.tahun = 2025;
+console.log(buku.tahun);
+
+for (let i =0; i<10; i++) {
+    if (i % 2 === 0) {
+        console.log("angka genap:", i);
+    }
+}
+
+function perkalian(a, b) {
+    return a * b;
+}
+let hasil = perkalian(8, 7);
+    console.log("hasil", hasil);
+
+</script>
+</html>

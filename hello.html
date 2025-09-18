@@ -1,126 +1,30 @@
 <html>
-<body>
-<canvas width="600" height="600"></canvas>
+    <canvas id="canvas" width="600" height="400" style="border: 1px solid black;"></canvas>
 <script>
-    let canvas = document.querySelector('canvas');
-    let context = canvas.getContext('2d');
+    const canvas = document.getElementById('canvas');
+    const context = canvas.getContext('2d');
+
+ 
 
     context.beginPath();
-    context.lineWidth = 4;
-    context.rect(100,100,400,400);
-    // context.stroke();
+    context.moveTo(20, 140);
+    context.lineTo(120, 10);
+    context.lineTo(220, 140);
+    context.closePath();
+    context.stroke();
 
     context.beginPath();
-    context.arc(300,300,100,0,Math.PI * 2);
-    // context.stroke();
+    context.fillRect(100, 25, 100, 100);
+    context.clearRect(145, 45, 60, 60);
+    context.strokeRect(100, 50, 50, 50);
+    //logic dasar
+    let nama = 'ivan';
+    const umur = 25;
 
-    const width = 60;
-    const height = 60;
-    const gap = 20;
-    let x,y;
-for (let i = 0; i < 5; i++) {
-    for (let j =0; j < 5; j++) {
-        let x = 100 + (width + gap) * i ;
-        let y = 100 + (height + gap ) * j;
+    console.log(nama, umur);
 
-        context.beginPath();
-        context.rect(x,y,width,height);
-        context.stroke();
-
-        if (Math.random() > 0.5) {
-            context.beginPath();
-            context.rect(x+8, y +8, width - 16, height - 16);
-            context.stroke();
-        } else {
-            context.beginPath();
-            context.arc(x + width / 2, y + height / 2 ,20,0,Math.PI * 2);
-            context.stroke();
-    }
-    }
-}
-
-let name = 'ivan';
-const lahir = 2000;
-let tahun = 2025;
-let x1 = 7;
-let y1 = 3;
-
-function umur( a1, b2) {
-    return a1 - b2;
-}
-console.log(x1 * y1);
-console.log(umur(tahun ,lahir));
-console.log(name);
-
-function sapa(n, u) {
-  return `Halo, nama saya ${n} dan umur saya ${u} tahun.`;
-}
-
-console.log(sapa(name, umur(tahun, lahir)));
-    
-
-// let year = 2025;
-// let nextYear = year + 1;
-
-// let dinner = 'salad';
-// let sentence = 'tonight, dinner will be ' + dinner;
-
-// function saySomething(param){
-//     console.log(param);
-// }
-// saySomething(sentence);
-
-// function add(a, b) {
-//     return a + b;
-// }
-// let result = add(4, 6);
-// console.log(result);
-
-// let multiply = (a, b ) => {
-//     return a *b ;
-// }
-// console.log(multiply(8,9));
-
-// let years = [];
-// let menu = ['starter', 'main', 'dessert', 'drinks', 'sides'];
-
-// for (let i = 0; i < menu.length; i ++) {
-//     console.log(menu[i]);
-// }
-
-// for (let i= 0; i < 10; i++) {
-//     years.push(2022 + i);
-// }
-// console.log(years);
-
-// menu.forEach(item => {
-//     console.log(item);
-// });
-
-// let fruit = ['apel', 'mangga', 'jeruk', 'pisang', 'semangka'];
-// let tahun = [];
-
-// for (let i = 0; i < fruit.length; i++) {
-//     console.log(fruit[i]);
-// }
-
-// for (let i = 0; i < 10; i++) {
-//     tahun.push( 2015 + i); 
-// }
-// console.log(tahun);
-
-// let angka = [2, 4, 6, 8, 10];
-// let menu1 = ['Nasi Goreng', 'Mie Ayam', 'Sate', 'Bakso'];
+</script>
 
 
-// angka.forEach(perkalian => {
-//     console.log(perkalian * 2)
-// });
 
-// menu1.forEach((menuNasi, index) => {
-//     console.log('menu ke', index, menuNasi);
-// });
-
-    </script>
-</body>
 </html>
